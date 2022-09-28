@@ -36,11 +36,6 @@
       align-items: center;
     }
 
-    #logo img {
-      width: 30%;
-      height: auto;
-    }
-
     #logo p {
       font-size: 64px;
       margin: 10px 0px;
@@ -51,23 +46,44 @@
       font-weight: bold;
     }
 
+    #icon {
+      width: 30%;
+      height: auto;
+    }
+
     #icons {
       position: relative;
       display: flex;
       flex-direction: row;
+      justify-content: center;
       margin-top: 20px;
+    }
+
+    #icons div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0px;
     }
 
     #icons a {
       display: flex;
+      flex-direction: row;
       justify-content: center;
     }
 
     #icons img {
-      height: auto;
-      width: auto;
       max-width: 400px;
-      max-height: 60px
+    }
+
+    #apple {
+      height: 55px;
+      align-self: center;
+    }
+
+    #google {
+      height: 80px;
+      padding: 0px;
     }
 
   </style>
@@ -76,9 +92,19 @@
 <body>
     <div id="container">
         <div id="logo">
-            <img src="./assets/icon6v2.png"/>
+            <img id="icon" src="./assets/icon6v2.png"/>
             <p><span id="simple">Vote</span><span id="vote">SF</span></p>
             <div id="icons">
+                <div>
+                    <a href="https://apps.apple.com/app/id1638273585?platform=iphone">
+                        <img id="apple" src="./assets/app-store.svg"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://play.google.com/store/apps/details?id=com.pdarche.votesf">
+                        <img id="google" src="./assets/google-play-badge.png"/>
+                    </a>
+                </div>
             </div>
         </div>
      </div>
