@@ -6,27 +6,15 @@
   <title>VoteSF</title>
   <meta name="description" content="VoteSF">
   <meta name="author" content="VoteSF">
-
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <style>
     body {
       margin: 0px;
-
     }
+
     #container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      height: 100vh;
       font-family: "Arial"
     }
-
-    #color {
-      position: absolute;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    } 
 
     #logo {
       position: relative;
@@ -37,18 +25,22 @@
     }
 
     #logo p {
-      font-size: 64px;
-      margin: 10px 0px;
-      font-weight: 300;
     }
 
     #vote {
       font-weight: bold;
     }
 
+    #icon-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
     #icon {
-      height: 50%;
-      width: auto;
+      height: 48px;
+      margin: 0px 20px 0px 0px
     }
 
     #icons {
@@ -56,7 +48,7 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      margin-top: 20px;
+      margin-top: 10%;
     }
 
     #icons div {
@@ -86,26 +78,121 @@
       padding: 0px;
     }
 
+    #lowerfold {
+      width: 66%;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    #text {
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 95%;
+      margin: 0px;
+    }
+
+    #padilla {
+      max-width: 20%;
+      min-width: 275px;
+      padding: 0% 5%;
+    }
+
+    #main-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 66%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #text-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 33%;
+      min-width: 450px;
+    }
+    
+    #header {
+      width: 96%%;
+      padding: 2%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 48px;
+    }
+
+
+    #menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    #menu div {
+      padding: 10px 5px;
+    }
+
+    #menu a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    #votesf {
+      font-size: 24px
+    }
+
+    #sf {
+      font-weight: bold;
+    }
+
+    @media (max-width: 1200px) {
+      #main-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
   </style>
 </head>
 
 <body>
   <div id="container">
-    <div id="logo">
-      <img id="icon" src="./assets/icon6v2.png"/>
-      <p><span id="simple">Vote</span><span id="vote">SF</span></p>
-      <div id="icons">
-        <div>
-          <a href="https://apps.apple.com/app/id1638273585?platform=iphone">
-            <img id="apple" src="./assets/app-store.svg"/>
-          </a>
-        </div>
-        <div>
-          <a href="https://play.google.com/store/apps/details?id=com.pdarche.votesf">
-            <img id="google" src="./assets/google-play-badge.png"/>
-          </a>
-        </div>
+    <div id="header">
+      <div id="icon-container">
+        <img id="icon" src="./assets/icon6v2.png" />
+        <p id="votesf">Vote<span id="sf">SF</span></p>
       </div>
+      <div id="menu">
+        <div><a href="/privacy">Privacy</a></div>
+        <div><a href="/terms">Terms</a></div>
+      </div>
+    </div>
+
+    <div id="logo">
+        <div id="main-container">
+          <div id="text-container">
+          <p id="text">All of the information you need to vote in the Nov. 8th election</p>
+            <div id="icons">
+              <div>
+                <a href="https://apps.apple.com/app/id1638273585?platform=iphone">
+                  <img id="apple" src="./assets/app-store.svg"/>
+                </a>
+              </div>
+              <div>
+                <a href="https://play.google.com/store/apps/details?id=com.pdarche.votesf">
+                  <img id="google" src="./assets/google-play-badge.png"/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <img id="padilla" src="./assets/padilla.png"/>
+        </div>
     </div>
    </div>
 </body>
