@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>VoteSF</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="VoteSF">
   <meta name="author" content="VoteSF">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -147,14 +148,30 @@
       font-weight: bold;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 600px) {
       #main-container {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width: 100%;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
+      }
+
+      #text-container {
+        max-width: 85%;
+        min-width: 0px;
+      }
+
+      #apple {
+        height: 56px;
+        align-self: center;
+      }
+
+      #google {
+        height: 80px;
+        padding: 0px;
       }
     }
 
